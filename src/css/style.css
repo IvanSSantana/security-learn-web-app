@@ -7,12 +7,12 @@
 }
 
 :root {
-    --primary-color: #0f172a;    /* Azul Marinho Confiança */
-    --accent-color: #2563eb;     /* Destaques e Links */
+    --primary-color: #0f172a;   /* Azul Marinho Confiança */
+    --accent-color: #06b6d4;     /* Destaques e Links */
     --accent-hover: #1d4ed8;
     --success-color: #10b981;    /* Verde Segurança */
-    --bg-light: #f8fafc;         /* Branco/Cinza Claro Limpeza */
-    --text-dark: #334155;
+    --bg-light: #0f172a;         /* Branco/Cinza Claro Limpeza */
+    --text-dark: #303947;
     --danger-color: #ef4444;
     --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -303,4 +303,8 @@ footer {
     padding: 20px;
     text-align: center;
     margin-top: auto;
+}
+
+.titulo {
+    color: #ffffff;
 }

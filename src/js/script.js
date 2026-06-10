@@ -90,7 +90,7 @@ const quizDados = [
             { texto: "Ignorar e entrar em contato com o banco pelos canais oficiais.", correta: true },
             { texto: "Preencher apenas os dados parciais para testar o site.", correta: false }
         ],
-        feedback: "Correto! Bancos não enviam links urgentes de bloqueio por e-mail. Isso é Phishing por Engenharia Social!"
+        feedback: "Bancos não enviam links urgentes de bloqueio por e-mail. Isso é Phishing por Engenharia Social!"
     },
     {
         pergunta: "Ao configurar o roteador Wi-Fi da sua casa, qual ação traz segurança verdadeira contra invasores?",
@@ -99,7 +99,7 @@ const quizDados = [
             { texto: "Esconder o nome da rede (SSID), mantendo-a aberta sem criptografia.", correta: false },
             { texto: "Alterar a senha administrativa de fábrica e ativar o protocolo WPA2 ou WPA3.", correta: true }
         ],
-        feedback: "Excelente! Senhas de fábrica são conhecidas publicamente. Alterar o painel administrativo blinda sua rede doméstica."
+        feedback: "Senhas de fábrica são conhecidas publicamente. Alterar o painel administrativo blinda sua rede doméstica."
     },
     {
         pergunta: "Um amigo envia uma promoção imperdível no WhatsApp solicitando que você compartilhe o link com 10 contatos para liberar um prêmio em Pix. Como agir?",
@@ -108,7 +108,7 @@ const quizDados = [
             { texto: "Testar o link imediatamente, pois veio de um contato confiável.", correta: false },
             { texto: "Compartilhar apenas com grupos arquivados para liberar o prêmio.", correta: false }
         ],
-        feedback: "Perfeito! Golpistas costumam clonar contas ou usar engenharia social para espalhar links maliciosos via conhecidos."
+        feedback: "Golpistas costumam clonar contas ou usar engenharia social para espalhar links maliciosos via conhecidos."
     },
     {
         pergunta: "Qual das opções abaixo descreve a criação de uma credencial/senha genuinamente forte?",
@@ -117,7 +117,7 @@ const quizDados = [
             { texto: "Mesclar letras maiúsculas e minúsculas formando uma palavra simples (ex: Seguranca).", correta: false },
             { texto: "Utilizar uma frase longa (passphrase) combinando letras, números e caracteres especiais (ex: C@valo#Azul$2026).", correta: true }
         ],
-        feedback: "Sensacional! Passphrases longas e complexas barram ataques automatizados de força bruta com eficácia."
+        feedback: "Passphrases longas e complexas barram ataques automatizados de força bruta com eficácia."
     }
 ];
 
@@ -162,6 +162,7 @@ function verificarResposta(btnElemento, itemCorreto, textoFeedback) {
         score++;
     } else {
         btnElemento.classList.add('wrong');
+
     }
 
     const fdb = document.getElementById('feedback');
