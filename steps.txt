@@ -1,10 +1,10 @@
-Trocar a logo (Rosi vai fazer ainda)
-Trocar "EtecSecurity" por "Ultimo Click"
+Trocar a logo -- feito
+Trocar "EtecSecurity" por "Ultimo Click" -- feito
 
 Cada grupo deve adicionar mais informações nas páginas que já foram separadas para cada um
 
 
-Linkar imgs do infográfico
-Trocar logo e nome
+Linkar imgs do infográfico -- falta o infográfico de IA: Problemas e soluções
+Trocar logo e nome -- feito
 
-Trocar o nome do simulador para Quiz
+Trocar o nome do simulador para Quiz -- feito

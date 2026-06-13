@@ -29,7 +29,8 @@ body {
 /* --- CABEÇALHO --- */
 header {
     background-color: white;
-    padding: 1rem 5%;
+    padding: 0 5%;              
+    height: 95px;               /* Deixa o header fixo numa altura bonita */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,14 +41,32 @@ header {
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 1.4rem;
-    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;               /* Cria uma "caixa" com largura fixa para a logo */
+    height: 90px;               /* Mesma altura do header */
+    overflow: visible;          /* Permite que o desenho da logo se espalhe além do corte invisível */
 }
 
 .logo a {
     text-decoration: none;
-    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo img {
+    height: 160px;              /* Mantém o tamanho grande que sua professora pediu */
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin-left: -15px;         /* Remove o excesso invisível do lado esquerdo */
+    
+    /* ADICIONE ESTA LINHA PARA CENTRALIZAR VERTICALMENTE: */
+    margin-top: 20px;           /* Empurra a logo um pouco para baixo. Ajuste esse valor se precisar de mais ou menos */
 }
 
 nav ul {
