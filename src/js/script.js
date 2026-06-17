@@ -118,8 +118,81 @@ const quizDados = [
             { texto: "Utilizar uma frase longa (passphrase) combinando letras, números e caracteres especiais (ex: C@valo#Azul$2026).", correta: true }
         ],
         feedback: "Passphrases longas e complexas barram ataques automatizados de força bruta com eficácia."
+    },
+    {
+        pergunta: "Você recebe uma mensagem informando que ganhou um prêmio, mas precisa pagar uma taxa antecipada para recebê-lo. O que fazer?",
+        alternativas: [
+            { texto: "Pagar a taxa para garantir o prêmio.", correta: false },
+            { texto: "Desconfiar da oferta e não realizar nenhum pagamento.", correta: true },
+            { texto: "Negociar um valor menor para a taxa.", correta: false }
+        ],
+        feedback: "Prêmios legítimos não exigem pagamento antecipado. Esse é um golpe muito comum."
+    },
+    {
+        pergunta: "Ao criar uma conta em um novo site, qual é a melhor prática de segurança?",
+        alternativas: [
+            { texto: "Usar a mesma senha de outras contas para facilitar o acesso.", correta: false },
+            { texto: "Criar uma senha única e forte para esse serviço.", correta: true },
+            { texto: "Anotar a senha em um comentário público do navegador.", correta: false }
+        ],
+        feedback: "Utilizar senhas únicas impede que o comprometimento de uma conta afete as demais."
+    },
+    {
+        pergunta: "Você encontra um pendrive desconhecido no estacionamento da escola. O que deve fazer?",
+        alternativas: [
+            { texto: "Conectar ao computador para descobrir o dono.", correta: false },
+            { texto: "Levar para casa e verificar os arquivos.", correta: false },
+            { texto: "Entregar ao responsável sem conectá-lo a nenhum dispositivo.", correta: true }
+        ],
+        feedback: "Pendrives desconhecidos podem conter malware projetado para infectar computadores."
+    },
+    {
+        pergunta: "Qual é a principal vantagem da autenticação em dois fatores (2FA)?",
+        alternativas: [
+            { texto: "Deixar a internet mais rápida.", correta: false },
+            { texto: "Adicionar uma camada extra de proteção além da senha.", correta: true },
+            { texto: "Eliminar a necessidade de criar senhas.", correta: false }
+        ],
+        feedback: "O 2FA reduz significativamente o risco de invasões mesmo que a senha seja descoberta."
+    },
+    {
+        pergunta: "Ao utilizar um computador público, qual atitude é mais segura?",
+        alternativas: [
+            { texto: "Salvar a senha no navegador para facilitar o próximo acesso.", correta: false },
+            { texto: "Encerrar a sessão e limpar os dados ao terminar o uso.", correta: true },
+            { texto: "Deixar a conta aberta caso volte mais tarde.", correta: false }
+        ],
+        feedback: "Sempre faça logout em computadores compartilhados para evitar acesso indevido."
+    },
+    {
+        pergunta: "Qual sinal pode indicar que um site é falso?",
+        alternativas: [
+            { texto: "Endereço com erros de escrita ou domínio estranho.", correta: true },
+            { texto: "Possuir certificado HTTPS válido.", correta: false },
+            { texto: "Ter design moderno e organizado.", correta: false }
+        ],
+        feedback: "Golpistas costumam criar endereços muito parecidos com os originais para enganar usuários."
+    },
+    {
+        pergunta: "Por que é importante manter o sistema operacional atualizado?",
+        alternativas: [
+            { texto: "Para corrigir falhas de segurança conhecidas.", correta: true },
+            { texto: "Apenas para mudar a aparência do sistema.", correta: false },
+            { texto: "Somente para liberar novos papéis de parede.", correta: false }
+        ],
+        feedback: "Atualizações frequentemente corrigem vulnerabilidades exploradas por criminosos."
+    },
+    {
+        pergunta: "Você recebe um código de verificação por SMS sem ter solicitado. O que fazer?",
+        alternativas: [
+            { texto: "Enviar o código para quem pedir.", correta: false },
+            { texto: "Ignorar e não compartilhar o código com ninguém.", correta: true },
+            { texto: "Publicar o código para descobrir quem enviou.", correta: false }
+        ],
+        feedback: "Códigos de verificação são pessoais e podem ser usados para invadir suas contas."
     }
-];
+        
+    ];
 
 let perguntaAtual = 0;
 let score = 0;
