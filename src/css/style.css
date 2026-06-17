@@ -13,6 +13,8 @@
     --success-color: #10b981;    /* Verde Segurança */
     --bg-light: #0f172a;         /* Branco/Cinza Claro Limpeza */
     --text-dark: #303947;
+    --title: white;
+    --subtitle: #b3c2d8;
     --danger-color: #ef4444;
     --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -89,13 +91,13 @@ nav a:hover, nav a.active {
 /* --- HERO BANNER --- */
 .hero {
     background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
-    color: white;
+    color:var(--title);
     padding: 60px 5%;
     text-align: center;
 }
 
-.hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
-.hero p { font-size: 1.1rem; max-width: 600px; margin: 0 auto; opacity: 0.9; }
+.hero h1 { font-size: 2.5rem; margin-bottom: 15px; color: var(--title);}
+.hero p { font-size: 1.1rem; max-width: 600px; margin: 0 auto; opacity: 0.9; color: var(--title);}
 
 /* --- CONTEXTO HOME --- */
 .info-section {
